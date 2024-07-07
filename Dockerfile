@@ -3,6 +3,7 @@ FROM node:lts-slim
 WORKDIR /app
 
 COPY . .
+COPY .env.local .env.local
 
 RUN npm install
 RUN npm run build
